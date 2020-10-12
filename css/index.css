@@ -13,12 +13,14 @@
 	--color-primary: #d72638ff; /* Principal */
 	--color-secondary: #3f88c5ff; /* Secundario */
 	--color-white: #ffffff; /* Blanco */
-	--color-light: #f0f0f0; /* Gris Claro */
+	--color-white-60: rgba(255,255,255,0.6); /* Blanco 60% opacidad */
+	--color-light: #f0f0f0; /* Gris Blanco */
 	--color-dark: #19152cff; /* Negro */
 	/*--color-success:; /* Verde */
 	--color-warning: #f49d37ff; /* Amarillo */
 	--color-danger: #f22b29ff; /* Rojo */
 	--color-wattpad: #ff7f66ff; /* Orange */
+	--color-lightGray: #808080;
 }
 
 /* ------------------ Estilos Generales ------------------ */
@@ -29,11 +31,23 @@
 }
 body{
     font-size: 16px;
-    font-family: 'Heebo', sans-serif;
-    color: var(--color-dark);
+    font-family: var(--sans);
+	color: var(--color-dark);
+	/*Grid*/
+	display: grid;
+	grid-template-areas: 'header header header header header'
+						 'main main main main main'
+						 'footer footer footer footer footer'
 }
 h1, h2, h3, h4{
-	font-family: 'Roboto Slab', serif;
+	font-family: var(--serif);
+}
+.parallax{
+	background-size: cover;
+	background-attachment: fixed;
+}
+.parallax .bg-filter{
+	background-color: rgba(0, 0, 0, 0.6);
 }
 p{
 	font-weight: 300;
@@ -41,4 +55,143 @@ p{
 a{
 	color: inherit;
 	text-decoration: none;
+}
+/* ------------------ Estilos Botones ------------------ */
+.btn{
+	display: inline-block;
+	padding: 15px 33px;
+	text-align: center;
+	border-radius: 5px;
+	border: none;
+}
+.btn-block{
+	display: block;
+	padding: 15px;
+}
+.btn.btn-pill{
+	border-radius: 10em;
+}
+.btn.btn-primary{
+	background-color: var(--color-primary);
+	color: var(--color-light);
+	box-shadow: 0px 1px 3px var(--color-primary);
+	transition: 0.2s;
+}
+.btn.btn-primary:hover{
+	color: var(--color-white-60);
+}
+.btn.btn-danger{
+	background-color: var(--color-danger);
+	color: var(--color-light);
+	box-shadow: 0px 1px 3px var(--color-danger);
+}
+
+/* ------------------ Estilos del Header ------------------ */
+#header{
+	background-color: var(--color-white);
+	box-shadow: 0px -3px 10px var(--color-dark);
+	padding: 0 0.625em; /*16px 10px*/
+	 position: sticky;
+	top: 0; 
+	grid-area: header;
+	display: grid;
+	grid-template-areas: 'nav-title nav-title nav-title menu-icon'
+						 'navbar navbar navbar navbar';
+}
+
+.navbar{
+	grid-area: navbar;
+	padding: 0.625em; /*10px*/
+	font-weight: 300;
+}
+.navbar .callTo{
+	margin-top: 10px;
+}
+.navbar-nav{
+	list-style: none;
+}
+.navbar-nav .nav-item{
+	padding: 0.1em;
+}
+.navbar .accordion{
+	padding-left: 1em; 
+}
+.navbar-nav .fas{
+	padding-right: 10px;
+}
+
+#header .navbar-title{
+	grid-area: nav-title;
+	display: inline-flex;
+	align-items: center;
+
+	font-size: 1.625em; /*28px*/
+	font-weight: 300;
+	margin: 0;
+	font-family: var(--heebo);
+}
+#header .menu-btn{
+	grid-area: menu-icon;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.menu-btn .menu-icon{
+	background: none;
+	border: none;
+	padding: 0.625em;
+	color: var(--color-primary);
+}
+
+/* ------------------ Estilos del Contenido Principal ------------------ */
+
+#main{
+	grid-area: main;
+}
+
+/* ----------- Estilos del Hero ----------- */
+.hero{
+	min-height: 446px;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 1fr 4fr 1fr;
+	align-content: center;
+	color: var(--color-white);
+	text-align: center;
+}
+.hero.parallax .bg-filter{
+	grid-area: 1 / 1 / 5 / 5;
+	display: inherit;
+	grid-template-columns: inherit;
+	grid-template-rows: inherit; 
+}
+
+.hero-wrapper{
+	grid-area: 2 / 2 / 3 / 3;
+}
+.hero .hero-title{
+	font-family: var(--heebo);
+	font-size: 2.25em;
+	line-height: 1.4;
+	letter-spacing: 0.5px;
+	margin: 0 20px 20px;
+}
+.hero .hero-description{
+	font-size: 1.125em;
+	font-family: var(--serif);
+	font-weight: 300;
+	line-height: 1.6;
+	margin: 10px 30px;
+}
+.hero .callTo{
+	margin-top: 60px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+/* ------------------ Estilos del Footer ------------------ */
+#footer{
+	grid-area: footer;
+	background-color: var(--color-dark);
+	color: var(--color-light);
 }
