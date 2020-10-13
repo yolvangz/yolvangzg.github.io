@@ -52,28 +52,28 @@
 		<!-- <nav class="navbar">
 			<ul id="navbar" class="navbar-nav accordion">
 				<li class="nav-item">
-					<a class="accordion-btn" href="#sobre-mi" data-target="sub-menu-1"><i class="fas fa-user"></i>Sobre mí</a>
+					<a class="accordion-btn" href="#sobre-mi" data-target="sub-menu-1"><i class="fas fa-user fa-fw"></i>Sobre mí</a>
 				</li>
 				<div class="accordion" id="sub-menu-1">
 					<li class="nav-item">
-						<a href="#"><i class="fas fa-chart-bar"></i>Habilidades</a>
+						<a href="#"><i class="fas fa-chart-bar fa-fw"></i>Habilidades</a>
 					</li>
 					<li class="nav-item">
-						<a href="#"><i class="fas fa-book"></i>Libro</a>
+						<a href="#"><i class="fas fa-book fa-fw"></i>Libro</a>
 					</li>
 				</div>
 				<li class="nav-item">
-					<a href="#proyectos"><i class="fas fa-tools"></i>Proyectos</a>
+					<a href="#proyectos"><i class="fas fa-tools fa-fw"></i>Proyectos</a>
 				</li>
 				<li class="nav-item">
-					<a href="#blog"><i class="fas fa-newspaper"></i>Blog</a>
+					<a href="#blog"><i class="fas fa-newspaper fa-fw"></i>Blog</a>
 				</li>
 			</ul>
 			<div class="callTo"><a href="#contacto" class="btn btn-pill btn-block btn-primary">Hablemos un rato</a></div>
 		</nav> -->
 		<div class="menu-btn">
 			<button class="menu-icon accordion-btn" data-target="navbar">
-				<i class="fas fa-bars fa-2x"></i>
+				<i class="fas fa-bars fa-lg"></i>
 			</button>
 		</div>
 		<!-- End Navbar -->
@@ -83,9 +83,9 @@
 	<div id="main">
 		<div class="hero parallax bg-1">
 			<div class="bg-filter">
-				<div class="hero-wrapper">
-					<h1 class="hero-title">Hola, me llamo Yolvan G. Zambrano</h1>
-					<p class="hero-description">Programador Front-end, estudiante universitario y aspirante a escritor...</p>
+				<div class="parallax-wrapper">
+					<h1 class="parallax-title">Hola, me llamo Yolvan G. Zambrano</h1>
+					<p class="parallax-description">Programador Front-end, estudiante universitario y aspirante a escritor...</p>
 					<div class="callTo">
 						<a href="#sobre-mi" class="btn btn-primary">Saber más</a>
 					</div>
@@ -94,28 +94,126 @@
 		</div>
 
 		<section id="sobre-mi">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae nemo maxime dolor, nisi quo repellat, at rem culpa ipsam laboriosam, nihil tempore quia? Laudantium odio voluptatibus corrupti, vitae perspiciatis.</p>
-		</section>
-		<section id="trabajos">
-			<h2>Mis Trabajos y Proyectos</h2>
-			<article>
-				<h3>Trabajo #1</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<a href="#">Ver más</a>
+			<p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae nemo maxime dolor, nisi quo repellat, at rem culpa ipsam laboriosam, nihil tempore quia? Laudantium odio voluptatibus corrupti, vitae perspiciatis.</p>
+			<article class="feature">
+				<figure>
+					<i class="fas fa-facebook fa-3x"></i>
+					<figcaption>
+						<h4 class="feature-title">Título 1</h4>
+						<p class="feature-description">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</figcaption>
+				</figure>
 			</article>
 		</section>
-		<section id="hobbies-y-pasiones">
-			<h2>Mis Hobbies y Pasiones <3</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magni accusantium, quos ab esse voluptatibus doloremque reiciendis, autem, excepturi hic illo voluptate fugiat ex repellat. Facere eligendi voluptate, eius cum.</p>
+		<section class="parallax bg-2" id="libro">
+			<div class="bg-filter">
+				<div class="parallax-wrapper">
+					<h2 class="parallax-title">También escribo!!!</h2>
+					<p class="parallax-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo veniam nesciunt repudiandae vero in aliquam quod quis dignissimos quisquam, dolor, laboriosam. Nam sit exercitationem ratione dolorem libero nemo asperiores, incidunt!</p>
+					<figure class="feature">
+						<div class="feature-img">
+							<img src="images/blog/portada-libro-1.jpg" alt="Esclavo de la Luna">
+						</div>
+						<figcaption>
+							<h4 class="feature-title">Título: <cite>Esclavo de la Luna</cite></h4>
+							<p class="feature-description">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Quis, libero, magnam? Sint ea minima cum voluptates dolorum accusantium, iste ducimus neque laborum nihil consequuntur voluptatibus necessitatibus repellat facere libero perspiciatis.</p>
+							<div class="callTo">
+								<a href="#" class="btn btn-danger">Leer libro <i class="fas fa-angle-right"></i></a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
 		</section>
-		<section id="contacto">
-			<h2>¿Hablamos un rato?</h2>
-			<a href="#" class="btn btn-primary">Hablemos ahora</a>
+		<section id="trabajos">
+			<h2 class="section-title">Mis Trabajos y Proyectos</h2>
+			<p class="section-description">Estos son algunos de los proyectos que he realizado y que estoy desarrollando hasta ahora:</p>
+			<article class="product">
+				<figure>
+					<div class="product-img"><img src="" alt="Proyecto 1"></div>
+					<figcaption class="product-details">
+						<h6 class="product-status active">En Desarrollo</h6>
+						<h4 class="product-title">Trabajo #1</h4>
+						<p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</figcaption>
+				</figure>
+				<a href="#" class="product-link">Ver más</a>
+			</article>
+		</section>
+		<section id="blog">
+			<h2 class="section-title">Blog</h2>
+			<p class="section-description">Mira mis últimas publicaciones</p>
+			<article class="post">
+				<figure>
+					<div class="post-img">
+						<img src="" alt="Imagen del post">
+					</div>
+					<figcaption>
+						<h6 class="post-category">Desarrollo</h6>
+						<h4 class="post-title">Post 1</h4>
+						<p class="post-description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatibus velit a deleniti quas doloribus quasi in corporis impedit accusantium! Deserunt quia ratione dicta delectus. Aspernatur asperiores ea assumenda iure!
+							<a href="#" class="post-link">Leer Más</a>
+						</p>
+					</figcaption>
+				</figure>
+			</article>
+		</section>
+		<section id="contacto" class="parallax bg-3">
+			<div class="bg-filter">
+				<div class="parallax-wrapper">
+					<h2 class="parallax-title">¿Quieres hablar?</h2>
+					<p class="parallax-description">Si tienes algo que decirme, o sólo quieres hablar un rato, no dudes en contactarme.</p>
+					<dl class="contact-list">
+						<div class="contact-item-img">
+							<i class="fas fa-js-square fa-2x fa-fw"></i>
+						</div>
+						<div class="contact-item">
+							<dt class="contact-item-title">
+								<h4>Estoy en:</h4>
+							</dt>
+							<dd class="contact-item-description">
+								Punta Cardón, Punto Fijo, Edo. Falcón, Venezuela.
+							</dd>
+						</div>
+						<div class="contact-item-img">
+							<i class="fas fa-mobile-alt fa-2x fa-fw"></i>
+						</div>
+						<div class="contact-item">
+							<dt class="contact-item-title">
+								<h4>Llámame</h4>
+							</dt>
+							<dd class="contact-item-description">
+								+58 414-6992200 Lunes a Viernes, <time datetime="8:00:00">8:00</time>-<time datetime="22:00:00">22:00</time>
+							</dd>
+						</div>
+					</dl>
+					<article class="card" role="form">
+						<div class="card-header raised">
+							<h3 class="card-form-label">Envíame un mensaje</h3>
+						</div>
+						<form class="card-form">
+							<input type="text" name="name" id="nombre" class="card-form-input" placeholder="Tu Nombre">
+							<input type="email" name="email" id="correo" class="card-form-input" placeholder="Tu Correo Electrónico">
+							<input type="text" name="subject" id="motivo" class="card-form-input" placeholder="Motivo">
+							<textarea name="message" id="mensaje" placeholder="Tu Mensaje"></textarea>
+							<button class="btn btn-primary btn-block" type="submit">Enviar Mensaje</button>
+						</form>
+					</article>
+				</div>
+			</div>
 		</section>
 	</div>
 	<!-- End Main Content -->
