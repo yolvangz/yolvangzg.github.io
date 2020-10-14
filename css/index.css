@@ -39,7 +39,7 @@ body{
 						 'main main main main main'
 						 'footer footer footer footer footer'
 }
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5{
 	font-family: var(--serif);
 }
 p, dl, #header .navbar-title, .parallax-description{
@@ -49,6 +49,7 @@ a{
 	color: inherit;
 	text-decoration: none;
 }
+
 .btn:focus, button:focus, input:focus{
 	outline: none;
 }
@@ -72,10 +73,14 @@ a{
 	display: inherit;
 	grid-template-columns: inherit;
 	grid-template-rows: inherit; 
+	align-content: inherit;
 }
 
 .parallax-wrapper{
 	grid-area: 2 / 2 / 3 / 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .parallax-title{
 	font-family: var(serif);
@@ -199,7 +204,50 @@ a{
 
 /* ------------------ Estilos del Footer ------------------ */
 #footer{
+	font-size: 1em;
 	grid-area: footer;
 	background-color: var(--color-dark);
 	color: var(--color-light);
+	padding: 30px 15px 10px;
+	text-align: left;
+}
+#footer h5{
+	font-size: 1.125em;
+	margin: 10px 0 20px;
+}
+#footer ul{
+	margin: 10px 0;
+}
+#footer p, ul{
+	font-size: 0.875em;
+}
+#footer p, #footer>ul li{
+	margin-bottom: 10px;
+}
+#footer>ul li{
+	display:flex;
+	align-items: center;
+}
+#footer p:last-child{
+	text-align: center;
+}
+#footer a{
+	font-weight: 400;
+}
+#footer a:hover{
+	text-decoration: underline;
+}
+.footer-nav{
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	list-style: none;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer-nav .nav-item{
+	display: block;
+	padding: 1em 0;
+}
+#footer .fab{
+	padding-right: 10px;
 }
