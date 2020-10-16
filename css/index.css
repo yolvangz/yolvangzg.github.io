@@ -15,12 +15,16 @@
 	--color-white: #ffffff; /* Blanco */
 	--color-white-60: rgba(255,255,255,0.6); /* Blanco 60% opacidad */
 	--color-light: #f0f0f0; /* Gris Blanco */
-	--color-dark: #19152cff; /* Negro */
+	--color-dark: #3c4858; /* Oscuro */
+	--color-darkBlue: #19152cff; /* Azul marino */
 	/*--color-success:; /* Verde */
 	--color-warning: #f49d37ff; /* Amarillo */
 	--color-danger: #f22b29ff; /* Rojo */
 	--color-wattpad: #ff7f66ff; /* Orange */
 	--color-lightGray: #999999;
+
+	/* Otros colores secundarios */
+	--color-icon-blue: #55ACEF;
 }
 
 /* ------------------ Estilos Generales ------------------ */
@@ -98,6 +102,7 @@ a{
 .btn{
 	display: inline-block;
 	padding: 15px 33px;
+	font-size: 0.75em;
 	font-weight: 300;
 	text-align: center;
 	text-transform: uppercase;
@@ -187,6 +192,20 @@ a{
 #main{
 	grid-area: main;
 }
+section:not(.parallax){
+	padding: 40px 25px 55px;
+	color: var(--color-lightGray);
+	text-align: center;
+}
+section:not(.parallax) h2,
+section:not(.parallax) h3,
+section:not(.parallax) h4{
+	color: var(--color-dark);
+}
+
+.bg-gray{
+	background-color: var(--color-light);
+}
 
 /* ----------- Estilos del Hero ----------- */
 
@@ -202,11 +221,66 @@ a{
 	margin-top: 60px;
 }
 
+/* ----------- Estilos del section #sobre-mi ----------- */
+
+.section-title{
+	margin: 20px 0 10px;
+}
+.section-description{
+	margin: 10px 0 15px;
+	font-size: 1.25em;
+}
+#sobre-mi .feature{
+	padding: 0 15px 30px;
+}
+#sobre-mi .feature-title{
+	font-size: 1.25em;
+	margin: 30px 0 15px;
+}
+.feature-img{
+	padding: 0 20%;
+	max-height: 300px;
+	overflow: hidden;
+}
+.feature-img a, .feature-img img{
+	max-height: inherit;
+}
+.feature-img a:focus{
+	outline: none;
+}
+.feature-img img{
+	max-width: 100%;
+	border-radius: 4px;
+}
+.feature-img.blue{
+	color: var(--color-icon-blue);
+}
+.feature-img.orange{
+	color: var(--color-wattpad);
+}
+
+/* ----------- Estilos del Libro ----------- */
+.feature{
+	margin-top: 70px;
+}
+.feature-title{
+	margin: 0.625em;
+}
+.feature-description{
+	font-size: 0.875em;
+	line-height: 1.6em;
+}
+/* ----------- Estilos de Mis trabajos ----------- */
+#trabajos{
+	padding-top: 65px;
+	padding-bottom: 70px;
+}
+
 /* ------------------ Estilos del Footer ------------------ */
 #footer{
 	font-size: 1em;
 	grid-area: footer;
-	background-color: var(--color-dark);
+	background-color: var(--color-darkBlue);
 	color: var(--color-light);
 	padding: 30px 15px 10px;
 	text-align: left;
