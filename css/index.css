@@ -87,8 +87,8 @@ a{
 	justify-content: center;
 }
 .parallax-title{
-	font-family: var(serif);
-	font-size: 1.75em;
+	font-family: var(--serif);
+	font-size: 1.5em;
 	line-height: 1.4;
 	margin: 0 0 20px;
 }
@@ -260,6 +260,9 @@ section:not(.parallax) h4{
 }
 
 /* ----------- Estilos del Libro ----------- */
+#libro .parallax-title{
+	font-size: 1.75em;
+}
 .feature{
 	margin-top: 70px;
 }
@@ -270,10 +273,36 @@ section:not(.parallax) h4{
 	font-size: 0.875em;
 	line-height: 1.6em;
 }
+
 /* ----------- Estilos de Mis trabajos ----------- */
 #trabajos{
 	padding-top: 65px;
 	padding-bottom: 70px;
+}
+
+/* ----------- Estilos de Contacto ----------- */
+#contacto{
+	text-align: left;
+}
+.contact-list{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-row-gap: 10px;
+	align-content: center;
+	margin-top: 30px;
+}
+.contact-item-img{
+	margin-top: 5px;
+	display: flex;
+	justify-content: flex-end;
+}
+.contact-item-title{
+	margin: 10px 0 15px;
+	font-size: 1.125em;
+}
+.contact-item-description{
+	font-size: 0.875em;
+	color: #ccc;
 }
 
 /* ------------------ Estilos del Footer ------------------ */
