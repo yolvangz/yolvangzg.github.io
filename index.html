@@ -158,20 +158,38 @@
 			<h2 class="section-title">Mis Trabajos y Proyectos</h2>
 			<p class="section-description">Estos son algunos de los proyectos que he realizado y que estoy desarrollando hasta ahora:</p>
 			<article class="product">
-				<figure>
-					<div class="product-img"><img src="" alt="Proyecto 1"></div>
-					<figcaption class="product-details">
-						<h6 class="product-status active">En Desarrollo</h6>
-						<h4 class="product-title">Trabajo #1</h4>
-						<p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<figure class="card product-card">
+					<div class="card-img product-img">
+						<a href="#">
+							<img src="images/sm/shunken.jpg" alt="foto de Piedra, papel o tijeras">
+						</a>
+					</div>
+					<figcaption class="card-content product-details">
+						<h6 class="product-status">Terminado</h6>
+						<h4 class="card-title product-title">¡Shunken!</h4>
+						<p class="card-text product-description">
+							Un sencillo juego de piedras, papel o tijeras contra una IA totalmente aleatoria, hecho puramente de HTML, CSS y JS, con apoyo del framework Bootstrap. ¿Quién sabe cuál ganará? ¡Sólo un resultado lo decidirá!
+						</p>
+						<a href="#" class="product-link">Ver proyecto</a>
 					</figcaption>
 				</figure>
-				<a href="#" class="product-link">Ver más</a>
+			</article>
+			<article class="product">
+				<figure class="card product-card">
+					<div class="card-img product-img">
+						<a href="#">
+							<img src="images/favicon.png" alt="Mi logotipo personal">
+						</a>
+					</div>
+					<figcaption class="card-content product-details">
+						<h6 class="product-status active">En Desarrollo</h6>
+						<h4 class="card-title product-title">My Portcase</h4>
+						<p class="card-text product-description">
+							Esta es mi página portafolio principal, hospedada con git-pages y mantenida por HTML y CSS, haciendo uso de las tecnologías de CSS Flex-box y CSS Grid.
+						</p>
+						<a href="#" class="product-link">Ver proyecto</a>
+					</figcaption>
+				</figure>
 			</article>
 		</section>
 		<section id="blog">
@@ -223,14 +241,28 @@
 						</div>
 					</dl>
 					<article class="card" role="form">
-						<div class="card-header raised">
-							<h3 class="card-form-label">Envíame un mensaje</h3>
+						<div class="card-header">
+							<h3 class="card-title">Envíame un mensaje</h3>
 						</div>
 						<form class="card-form">
-							<input type="text" name="name" id="nombre" class="card-form-input" placeholder="Tu Nombre">
-							<input type="email" name="email" id="correo" class="card-form-input" placeholder="Tu Correo Electrónico">
-							<input type="text" name="subject" id="motivo" class="card-form-input" placeholder="Motivo">
-							<textarea name="message" id="mensaje" placeholder="Tu Mensaje"></textarea>
+							<div class="form-field">
+								<input type="text" name="name" id="nombre" class="card-form-input" placeholder="Tu Nombre">
+								<label to="nombre" class="field-error">Este campo es obligatorio</label>
+							</div>
+
+							<div class="form-field">
+								<input type="email" name="email" id="correo" class="card-form-input" placeholder="Tu Correo Electrónico">
+								<label to="correo" class="field-error">Por favor, introduce un correo electrónico válido</label>
+							</div>
+
+							<div class="form-field">
+								<input type="text" name="subject" id="motivo" class="card-form-input" placeholder="Motivo">
+								<label to="motivo" class="field-error">Este campo es obligatorio</label>
+							</div>
+							<div class="form-field">
+								<textarea class="card-form-input" name="message" id="mensaje" placeholder="Tu Mensaje"></textarea>
+								<label to="mensaje" class="field-error">Este campo es obligatorio</label>
+							</div>
 							<button class="btn btn-primary btn-block" type="submit">Enviar Mensaje</button>
 						</form>
 					</article>
@@ -244,7 +276,7 @@
 		<h5>Sobre la página</h5>
 		<p>Página elaborada por mí mismo. Un proyecto de <a href="https://yolvangzg.github.io" target="author">Yolvan G. Zambrano</a>.</p>
 		<p>Imágenes tomadas por <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1839500">Pexels</a>,
-		<a href="https://pixabay.com/users/startupstockphotos-690514/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=594090">StartupStockPhotos</a> y 
+		<a href="https://pixabay.com/users/startupstockphotos-690514/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=594090">StartupStockPhotos</a>, <a href="https://pixabay.com/users/tumisu-148124/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4121142">Tumisu</a> y 
 		<a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=336378">Free-Photos</a>
 		de <a href="https://pixabay.com">Pixabay</a>. Derechos reservados a sus respectivos propietarios</p>
 		<h5>Redes Sociales</h5>
