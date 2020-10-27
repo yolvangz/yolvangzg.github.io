@@ -21,11 +21,12 @@
 	--color-success: #9c27b0; /* Morado */
 	--color-warning: #f49d37ff; /* Amarillo */
 	--color-danger: #f22b29ff; /* Rojo */
-	--color-wattpad: #ff7f66ff; /* Orange */
 	--color-lightGray: #999999;
 
 	/* Otros colores secundarios */
 	--color-icon-blue: #55ACEF;
+	--color-icon-orange: #ff7f66ff;
+	--color-icon-purple: #89229B;
 }
 
 /* ------------------ Estilos Generales ------------------ */
@@ -128,6 +129,8 @@ a{
 	text-align: center;
 	margin: 10px 0;
 }
+
+/* ------ Formulario del card ------ */
 .card-form{
 	padding: 30px 10px 48px;
 	display: grid;
@@ -175,6 +178,63 @@ textarea.card-form-input{
 .card-form .btn{
 	font-size: 0.875em;
 	padding: 15px 33px;
+}
+
+/* ------------------ Landing-Page Posts ------------------ */
+.post{
+	margin: 30px 0;
+}
+.post-img{
+	height: 183px;
+	border-radius: 3px;
+	overflow: hidden;
+	background-color: var(--color-dark);
+	transition: 1s;
+	opacity: 1;
+}
+.post-img a{
+	height: inherit;
+}
+.post-img img{
+	width: 100%;
+	height: inherit;
+	object-fit: cover;
+	transition: 1s ease-in-out;
+	transform: scale(1,1);
+}
+.post-img:hover img{
+	transform: scale(1.18, 1.18);
+	opacity: 0.7;
+}
+.post-details{
+	text-align: left;
+	padding: 15px 5px;
+}
+.post-category.orange{
+	color: var(--color-icon-orange);
+}
+.post-category{
+	font-size: 0.75em;
+	margin: 10px 0;
+	text-transform: uppercase;
+}
+.post-title, .post-description{
+	margin-bottom: 10px;
+}
+.post-title{
+	font-size: 1.125em;
+}
+.post-description{
+	font-size: 0.875em;
+}
+.post-link{
+	color: var(--color-dark);
+	display: inline-block;
+	margin-left: 5px;
+	transition: color .3s;
+}
+.post-link:hover{
+	color: var(--color-success);
 }
 /* ------------------ Estilos Botones ------------------ */
 .btn{
@@ -335,7 +395,7 @@ section:not(.parallax) h4{
 	color: var(--color-icon-blue);
 }
 .feature-img.orange{
-	color: var(--color-wattpad);
+	color: var(--color-icon-orange);
 }
 
 /* ----------- Estilos del Libro ----------- */
@@ -394,7 +454,7 @@ section:not(.parallax) h4{
 	color: var(--color-icon-blue);
 }
 .product-status.active{
-	color: var(--color-wattpad);
+	color: var(--color-icon-orange);
 }
 .product-description{
 	font-size: 0.875em;
