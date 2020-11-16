@@ -1,3 +1,5 @@
+@import url(grid.css);
+
 /* Variables */
 :root{
 	/* ------------------ Paleta de colores ------------------ */
@@ -39,11 +41,6 @@ body{
     font-size: 16px;
     font-family: var(--sans);
 	color: var(--color-dark);
-	/*Grid*/
-	display: grid;
-	grid-template-areas: 'header header header header header'
-						 'main main main main main'
-						 'footer footer footer footer footer'
 }
 h1, h2, h3, h4, h5{
 	font-family: var(--serif);
@@ -277,7 +274,6 @@ textarea.card-form-input{
 	position: sticky;
 	z-index: 10000;
 	top: 0; 
-	grid-area: header;
 	display: grid;
 	grid-template-areas: 'nav-title nav-title nav-title menu-icon'
 						 'navbar navbar navbar navbar';
@@ -327,10 +323,6 @@ textarea.card-form-input{
 }
 
 /* ------------------ Estilos del Contenido Principal ------------------ */
-
-#main{
-	grid-area: main;
-}
 section:not(.parallax){
 	padding: 40px 25px 55px;
 	color: var(--color-lightGray);
@@ -417,6 +409,9 @@ section:not(.parallax) h4{
 #trabajos{
 	padding-top: 65px;
 	padding-bottom: 70px;
+}
+#trabajos .row{
+	grid-gap: 10px 20px;
 }
 .product{
 	padding-top: 30px;
@@ -506,7 +501,6 @@ section:not(.parallax) h4{
 /* ------------------ Estilos del Footer ------------------ */
 #footer{
 	font-size: 1em;
-	grid-area: footer;
 	background-color: var(--color-darkBlue);
 	color: var(--color-light);
 	padding: 30px 15px 10px;
