@@ -180,6 +180,8 @@ textarea.card-form-input{
 /* ------------------ Landing-Page Posts ------------------ */
 .post{
 	margin: 30px 0;
+	max-width: 400px;
+	margin: 0 auto;
 }
 .post-img{
 	height: 183px;
@@ -305,7 +307,7 @@ textarea.card-form-input{
 	display: inline-flex;
 	align-items: center;
 
-	font-size: 1.625em; /*28px*/
+	font-size: 1.5em; /*24px*/
 	margin: 0;
 	font-family: var(--heebo);
 }
@@ -415,6 +417,8 @@ section:not(.parallax) h4{
 }
 .product{
 	padding-top: 30px;
+	max-width: 270px;
+	margin: 0 auto;
 }
 .product-img{
 	
@@ -545,4 +549,12 @@ section:not(.parallax) h4{
 }
 #footer .fab{
 	padding-right: 10px;
+}
+
+
+/*@media screen and (min-width: 467px){
+	#sobre-mi .feature{
+		max-width: 400px;
+
+	}*/
 }

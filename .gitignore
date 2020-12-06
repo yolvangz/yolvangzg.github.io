@@ -1,3 +1,4 @@
 *.code-workspace
 *.sublime-workspace
+*.sublime-project
 template/

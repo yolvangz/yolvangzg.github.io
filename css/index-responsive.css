@@ -1,0 +1,13 @@
+/* --------------------- Extra-small screens --------------------- */
+@media screen and (min-width: 467px) {
+	#sobre-mi .feature{
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	.post-details{
+		text-align: center;
+	}
+	#contacto .parallax-wrapper{
+		padding: 0 30px;
+	}
+}

@@ -42,6 +42,45 @@
 }
 
 /*========================= Media Queries ============================*/
+/* ----- Extra Small Screen ------ */
+@media screen and (min-width: 467px) {
+	.col-xs{
+		grid-column-end: span 1;
+	}
+	.col-xs-2{
+		grid-column-end: span 2;
+	}
+	.col-xs-3{
+		grid-column-end: span 3;
+	}
+	.col-xs-4{
+		grid-column-end: span 4;
+	}
+	.col-xs-5{
+		grid-column-end: span 5;
+	}
+	.col-xs-6{
+		grid-column-end: span 6;
+	}
+	.col-xs-7{
+		grid-column-end: span 7;
+	}
+	.col-xs-8{
+		grid-column-end: span 8;
+	}
+	.col-xs-9{
+		grid-column-end: span 9;
+	}
+	.col-xs-10{
+		grid-column-end: span 10;
+	}
+	.col-xs-11{
+		grid-column-end: span 11;
+	}
+	.col-xs-12{
+		grid-column-end: span 12;
+	}
+}
 /* ----- Small Screen ------ */
 @media screen and (min-width: 576px) {
 	.col-sm{
