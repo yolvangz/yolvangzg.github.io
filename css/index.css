@@ -38,7 +38,7 @@
     padding: 0;
 }
 body{
-    font-size: 16px;
+    font-size: 1em;
     font-family: var(--sans);
 	color: var(--color-dark);
 }
@@ -130,9 +130,7 @@ a{
 /* ------ Formulario del card ------ */
 .card-form{
 	padding: 30px 10px 48px;
-	display: grid;
-	grid-template-columns: auto;
-	grid-row-gap: 24px;  
+	grid-row-gap: 5px;
 }
 .form-field{
 	display: flex;
@@ -272,7 +270,7 @@ textarea.card-form-input{
 #header{
 	background-color: var(--color-white);
 	box-shadow: 0px -3px 10px var(--color-dark);
-	padding: 0 0.625em; /*16px 10px*/
+	padding: 0.5em 0.625em; /*16px 10px*/
 	position: sticky;
 	z-index: 10000;
 	top: 0; 
@@ -412,17 +410,12 @@ section:not(.parallax) h4{
 	padding-top: 65px;
 	padding-bottom: 70px;
 }
-#trabajos .row{
-	grid-gap: 10px 20px;
-}
 .product{
 	padding-top: 30px;
 	max-width: 270px;
 	margin: 0 auto;
 }
 .product-img{
-	
-	
 	background-color: var(--color-white);
 	box-shadow: 0 5px 15px -8px rgba(0,0,0,.24), 0 8px 10px -5px rgba(0,0,0,.2), 0 10px 10px -5px rgba(0,0,0,.2);
 	
@@ -483,7 +476,7 @@ section:not(.parallax) h4{
 }
 .contact-list{
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: 50px auto;
 	grid-row-gap: 10px;
 	align-content: center;
 	margin-top: 30px;
@@ -549,12 +542,4 @@ section:not(.parallax) h4{
 }
 #footer .fab{
 	padding-right: 10px;
-}
-
-
-/*@media screen and (min-width: 467px){
-	#sobre-mi .feature{
-		max-width: 400px;
-
-	}*/
 }

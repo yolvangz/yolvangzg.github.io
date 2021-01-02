@@ -1,7 +1,6 @@
 .row{
 	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	justify-content: center;
+	grid-template-columns: repeat(12, 8.333333333%);
 }
 /*========================= Fixed Values ============================*/
 .col{

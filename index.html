@@ -81,7 +81,6 @@
 	</header>
 	<!-- End Main Header -->
 	<!-- Start Main Content -->
-	<div id="main">
 		<div class="hero parallax bg-1">
 			<div class="bg-filter">
 				<div class="parallax-wrapper">
@@ -93,7 +92,8 @@
 				</div>
 			</div>
 		</div>
-
+	<div class="main-wrapper">
+		<!-- Start Main Content -->
 		<section id="sobre-mi">
 			<p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae nemo maxime dolor, nisi quo repellat, at rem culpa ipsam laboriosam, nihil tempore quia? Laudantium odio voluptatibus corrupti, vitae perspiciatis.</p>
 			<article class="feature">
@@ -247,59 +247,58 @@
 						<div class="card-header">
 							<h3 class="card-title">Envíame un mensaje</h3>
 						</div>
-						<form class="card-form">
-							<div class="form-field">
+						<form class="card-form row">
+							<div class="form-field col-12 col-md-6">
 								<input type="text" name="name" id="nombre" class="card-form-input" placeholder="Tu Nombre">
 								<label to="nombre" class="field-error">Este campo es obligatorio</label>
 							</div>
 
-							<div class="form-field">
+							<div class="form-field col-12 col-md-6">
 								<input type="email" name="email" id="correo" class="card-form-input" placeholder="Tu Correo Electrónico">
 								<label to="correo" class="field-error">Por favor, introduce un correo electrónico válido</label>
 							</div>
 
-							<div class="form-field">
+							<div class="form-field col-12">
 								<input type="text" name="subject" id="motivo" class="card-form-input" placeholder="Motivo">
 								<label to="motivo" class="field-error">Este campo es obligatorio</label>
 							</div>
-							<div class="form-field">
+							<div class="form-field col-12">
 								<textarea class="card-form-input" name="message" id="mensaje" placeholder="Tu Mensaje"></textarea>
 								<label to="mensaje" class="field-error">Este campo es obligatorio</label>
 							</div>
-							<button class="btn btn-primary btn-block" type="submit">Enviar Mensaje</button>
+							<button class="col-12 col-md-4 btn btn-primary btn-block" type="submit">Enviar Mensaje</button>
 						</form>
 					</article>
 				</div>
 			</div>
 		</section>
-	</div>
-	<!-- End Main Content -->
-	<!-- Start Footer -->
-	<footer id="footer">
-		<h5>Sobre la página</h5>
-		<p>Página elaborada por mí mismo. Un proyecto de <a href="https://yolvangzg.github.io" target="author">Yolvan G. Zambrano</a>.</p>
-		<p>Imágenes tomadas por <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1839500">Pexels</a>,
-		<a href="https://pixabay.com/users/startupstockphotos-690514/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=594090">StartupStockPhotos</a>, <a href="https://pixabay.com/users/tumisu-148124/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4121142">Tumisu</a> y 
-		<a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=336378">Free-Photos</a>
-		de <a href="https://pixabay.com">Pixabay</a>. Derechos reservados a sus respectivos propietarios</p>
-		<h5>Redes Sociales</h5>
-		<ul>
-			<li><i class="fab fa-lg fa-fw fa-facebook"></i><a href="https://www.facebook.com/Guillermo.Gomez64" target="red1">Guillermo Gómez</a></li>
-			<li><i class="fab fa-lg fa-fw fa-instagram"></i><a href="https://www.instagram.com/yolvangzg" target="red2">&#64;yolvangzg</a></li>
-			<li><i class="fab fa-lg fa-fw fa-github"></i><a href="https://github.com/yolvangzg" target="red3">&#64;yolvangzg</a></li>
-		</ul>
-		<nav>
-			<ul class="footer-nav">
-				<li class="nav-item"><a href="#sobre-mi">Sobre mí</a></li>
-				<li class="nav-item"><a href="#trabajos">Trabajos</a></li>
-				<li class="nav-item"><a href="#blog">Blog</a></li>
-				<li class="nav-item"><a href="#contacto">Contacto</a></li>
+		<!-- End Main Content -->
+		<!-- Start Footer -->
+		<footer id="footer">
+			<h5>Sobre la página</h5>
+			<p>Página elaborada por mí mismo. Un proyecto de <a href="https://yolvangzg.github.io" target="author">Yolvan G. Zambrano</a>.</p>
+			<p>Imágenes tomadas por <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1839500">Pexels</a>,
+			<a href="https://pixabay.com/users/startupstockphotos-690514/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=594090">StartupStockPhotos</a>, <a href="https://pixabay.com/users/tumisu-148124/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4121142">Tumisu</a> y 
+			<a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=336378">Free-Photos</a>
+			de <a href="https://pixabay.com">Pixabay</a>. Derechos reservados a sus respectivos propietarios</p>
+			<h5>Redes Sociales</h5>
+			<ul>
+				<li><i class="fab fa-lg fa-fw fa-facebook"></i><a href="https://www.facebook.com/Guillermo.Gomez64" target="red1">Guillermo Gómez</a></li>
+				<li><i class="fab fa-lg fa-fw fa-instagram"></i><a href="https://www.instagram.com/yolvangzg" target="red2">&#64;yolvangzg</a></li>
+				<li><i class="fab fa-lg fa-fw fa-github"></i><a href="https://github.com/yolvangzg" target="red3">&#64;yolvangzg</a></li>
 			</ul>
-		</nav>
-		<p>&copy; Github.com 2020.</p>
-	</footer>
+			<nav>
+				<ul class="footer-nav">
+					<li class="nav-item"><a href="#sobre-mi">Sobre mí</a></li>
+					<li class="nav-item"><a href="#trabajos">Trabajos</a></li>
+					<li class="nav-item"><a href="#blog">Blog</a></li>
+					<li class="nav-item"><a href="#contacto">Contacto</a></li>
+				</ul>
+			</nav>
+			<p>&copy; Github.com 2020.</p>
+		</footer>
 	<!-- End Footer -->
-
+	</div>
 	<!-- Scripts Libraries -->
 
 	<!-- Jquery CDN -->
