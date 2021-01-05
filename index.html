@@ -96,42 +96,45 @@
 		<!-- Start Main Content -->
 		<section id="sobre-mi">
 			<p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae nemo maxime dolor, nisi quo repellat, at rem culpa ipsam laboriosam, nihil tempore quia? Laudantium odio voluptatibus corrupti, vitae perspiciatis.</p>
-			<article class="feature">
-				<figure>
-					<div class="feature-img blue">
-						<i class="fas fa-code fa-4x"></i>
-					</div>
-					<figcaption>
-						<h4 class="feature-title">Título 1</h4>
-						<p class="feature-description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
-					</figcaption>
-				</figure>
-			</article>
-			<article class="feature">
-				<figure>
-					<div class="feature-img orange">
-						<i class="fas fa-code-branch fa-4x"></i>
-					</div>
-					<figcaption>
-						<h4 class="feature-title">Título 2</h4>
-						<p class="feature-description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
-					</figcaption>
-				</figure>
-			</article>
+			<div class="row">
+				<article class="feature col-12 col-lg-4">
+					<figure>
+						<div class="feature-img blue">
+							<i class="fas fa-code fa-4x"></i>
+						</div>
+						<figcaption>
+							<h4 class="feature-title">Título 1</h4>
+							<p class="feature-description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</figcaption>
+					</figure>
+				</article>
+				<article class="feature col-12 col-lg-4">
+					<figure>
+						<div class="feature-img orange">
+							<i class="fas fa-code-branch fa-4x"></i>
+						</div>
+						<figcaption>
+							<h4 class="feature-title">Título 2</h4>
+							<p class="feature-description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</figcaption>
+					</figure>
+				</article>
+
+			</div>
 		</section>
 		<section id="libro" class="parallax bg-2">
 			<div class="bg-filter">
@@ -199,8 +202,8 @@
 			<h2 class="section-title">Blog</h2>
 			<p class="section-description">Mira mis últimas publicaciones</p>
 			<div class="row">
-				<article class="post col-3">
-					<figure>
+				<article class="post col-12 col-lg-6">
+					<figure class="post-container">
 						<div class="post-img">
 							<img src="images/md/blog/post-1.jpg" alt="Imagen del post">
 						</div>
@@ -219,58 +222,65 @@
 		<section id="contacto" class="parallax bg-3">
 			<div class="bg-filter">
 				<div class="parallax-wrapper">
-					<h2 class="parallax-title">¿Quieres hablar?</h2>
-					<p class="parallax-description">Si tienes algo que decirme, o sólo quieres hablar un rato, no dudes en contactarme.</p>
-					<dl class="contact-list">
-						<div class="contact-item-img">
-							<i class="fas fa-map-marker-alt fa-2x fa-fw"></i>
+					<div class="row contact-row">
+						<div class="col-12 col-lg-4">
+							<h2 class="parallax-title">¿Quieres hablar?</h2>
+							<p class="parallax-description">Si tienes algo que decirme, o sólo quieres hablar un rato, no dudes en contactarme.</p>
+							<dl class="contact-list">
+								<div class="contact-item-img">
+									<i class="fas fa-map-marker-alt fa-2x fa-fw"></i>
+								</div>
+								<div class="contact-item">
+									<dt class="contact-item-title">
+										<h4>Estoy en:</h4>
+									</dt>
+									<dd class="contact-item-description">
+										Punta Cardón, Punto Fijo, Edo. Falcón, Venezuela.
+									</dd>
+								</div>
+								<div class="contact-item-img">
+									<i class="fas fa-mobile-alt fa-2x fa-fw"></i>
+								</div>
+								<div class="contact-item">
+									<dt class="contact-item-title">
+										<h4>Llámame</h4>
+									</dt>
+									<dd class="contact-item-description">
+										+58 414-6992200 Lunes a Viernes, <time datetime="8:00:00">8:00</time>-<time datetime="22:00:00">22:00</time>
+									</dd>
+								</div>
+							</dl>
 						</div>
-						<div class="contact-item">
-							<dt class="contact-item-title">
-								<h4>Estoy en:</h4>
-							</dt>
-							<dd class="contact-item-description">
-								Punta Cardón, Punto Fijo, Edo. Falcón, Venezuela.
-							</dd>
-						</div>
-						<div class="contact-item-img">
-							<i class="fas fa-mobile-alt fa-2x fa-fw"></i>
-						</div>
-						<div class="contact-item">
-							<dt class="contact-item-title">
-								<h4>Llámame</h4>
-							</dt>
-							<dd class="contact-item-description">
-								+58 414-6992200 Lunes a Viernes, <time datetime="8:00:00">8:00</time>-<time datetime="22:00:00">22:00</time>
-							</dd>
-						</div>
-					</dl>
-					<article class="card" role="form">
-						<div class="card-header">
-							<h3 class="card-title">Envíame un mensaje</h3>
-						</div>
-						<form class="card-form row">
-							<div class="form-field col-12 col-md-6">
-								<input type="text" name="name" id="nombre" class="card-form-input" placeholder="Tu Nombre">
-								<label to="nombre" class="field-error">Este campo es obligatorio</label>
+						<article class="card col-12 col-lg-5" role="form">
+							<div class="card-header">
+								<h3 class="card-title">Envíame un mensaje</h3>
 							</div>
+							<form class="card-form">
+								<div class="row">
+									<div class="form-field col-12 col-md-6 col-lg-12">
+										<input type="text" name="name" id="nombre" class="card-form-input" placeholder="Tu Nombre">
+										<label to="nombre" class="field-error">Este campo es obligatorio</label>
+									</div>
 
-							<div class="form-field col-12 col-md-6">
-								<input type="email" name="email" id="correo" class="card-form-input" placeholder="Tu Correo Electrónico">
-								<label to="correo" class="field-error">Por favor, introduce un correo electrónico válido</label>
-							</div>
-
-							<div class="form-field col-12">
-								<input type="text" name="subject" id="motivo" class="card-form-input" placeholder="Motivo">
-								<label to="motivo" class="field-error">Este campo es obligatorio</label>
-							</div>
-							<div class="form-field col-12">
-								<textarea class="card-form-input" name="message" id="mensaje" placeholder="Tu Mensaje"></textarea>
-								<label to="mensaje" class="field-error">Este campo es obligatorio</label>
-							</div>
-							<button class="col-12 col-md-4 btn btn-primary btn-block" type="submit">Enviar Mensaje</button>
-						</form>
-					</article>
+									<div class="form-field col-12 col-md-6 col-lg-12">
+										<input type="email" name="email" id="correo" class="card-form-input" placeholder="Tu Correo Electrónico">
+										<label to="correo" class="field-error">Por favor, introduce un correo electrónico válido</label>
+									</div>
+								</div>
+								<div class="form-field">
+									<input type="text" name="subject" id="motivo" class="card-form-input" placeholder="Motivo">
+									<label to="motivo" class="field-error">Este campo es obligatorio</label>
+								</div>
+								<div class="form-field">
+									<textarea class="card-form-input" name="message" id="mensaje" placeholder="Tu Mensaje"></textarea>
+									<label to="mensaje" class="field-error">Este campo es obligatorio</label>
+								</div>
+								<div class="form-submit row">
+									<button class="col-12 col-md-4 col-lg-12 btn btn-primary btn-block" type="submit" role="submit">Enviar Mensaje</button>
+								</div>
+							</form>
+						</article>
+					</div>
 				</div>
 			</div>
 		</section>

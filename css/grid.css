@@ -1,6 +1,5 @@
 .row{
 	display: flex;
-	justify-content: center;
 	flex-wrap: wrap;
 }
 /*========================= Fixed Values ============================*/
@@ -279,7 +278,7 @@
 	}
 }
 /* ----- Large Desktop Screen ------ */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
 	.col-xl{
 		flex-basis: 0;
 		flex-grow: 1;

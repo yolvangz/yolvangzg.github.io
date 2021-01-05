@@ -128,9 +128,11 @@ a{
 }
 
 /* ------ Formulario del card ------ */
+#contacto .row.contact-row{
+	justify-content: space-around;
+}
 .card-form{
 	padding: 30px 10px 48px;
-	grid-row-gap: 5px;
 }
 .form-field{
 	display: flex;
@@ -176,8 +178,9 @@ textarea.card-form-input{
 }
 
 /* ------------------ Landing-Page Posts ------------------ */
-.post>*{
+.post .post-container{
 	margin: 30px auto;
+	padding: 0 15px;
 	max-width: 400px;
 }
 .post-img{
@@ -246,6 +249,7 @@ textarea.card-form-input{
 }
 .btn-block{
 	display: block;
+	width: 100%;
 	padding: 15px;
 }
 .btn.btn-pill{
@@ -409,6 +413,9 @@ section:not(.parallax) h4{
 	padding-top: 65px;
 	padding-bottom: 70px;
 }
+#trabajos .row{
+	justify-content: center;
+}
 .product{
 	padding: 30px 15px 0;
 	max-width: 270px;
@@ -462,6 +469,10 @@ section:not(.parallax) h4{
 	/*text-decoration: underline;*/
 	text-transform: traslate(0,-4px);
 	text-shadow: 0px 2px 3px;
+}
+/* ----------- Estilos de Blog ----------- */
+#blog>.row{
+	justify-content: center;
 }
 
 /* ----------- Estilos de Contacto ----------- */

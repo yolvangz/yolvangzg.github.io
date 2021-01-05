@@ -1,8 +1,5 @@
 /* --------------------- Extra-small screens --------------------- */
 @media screen and (min-width: 467px) {
-	body{
-		font-size: 1.125em;
-	}
 	#sobre-mi .feature{
 		max-width: 80%;
 		margin: 0 auto;
@@ -16,6 +13,18 @@
 }
 /* --------------------- Small screens --------------------- */
 @media screen and (min-width: 567px) {
+	/*
+		More space
+	*/
+	#header{
+		padding: 0.625em 1em;
+	}
+	#sobre-mi .feature{
+		margin-top: 1em;
+	}
+	/*
+		Limit contact list space
+	*/
 	.contact-list{
 		width: 50%;
 	}
@@ -27,6 +36,13 @@
 	}
 }
 @media screen and (min-width: 768px) {
+	body{
+		font-size: 1.05em;
+	}
+	/* -------- Main-Content --------- */
+	/*
+		Make appear the content wrapper, which take it over the background
+	*/
 	.main-wrapper{
 		position: relative;
 		margin: -60px 0.833333333em 0; /* 0.83 = 15px at 18px = 1em */
@@ -34,25 +50,59 @@
 		border-radius: 10px 10px 0 0;
 		background-color: var(--color-white)
 	}
+	/*
+		Give some space to first section
+	*/
+	.main-wrapper section:first-child{
+		padding-top: 60px;
+	}
+	/* -------- Hero --------- */
 	.hero.parallax{
 		grid-template-rows: 1fr 4.5fr 1fr;
 	}
 	.hero .parallax-title{
 		font-size: 2.8em;
 	}
-	.main-wrapper section:first-child{
-		padding-top: 60px;
+	/* -------- Contact Section --------- */
+	.contact-list{
+		align-self: flex-start;
+		margin-top: 70px;
 	}
-	.form-field.col-md-6:nth-child(1){
-		padding-right: 10px; 
+	/*.card-form .row:first-child{
+		justify-content: flex-start;
+	}*/
+	/*
+		Space between 2 fields
+	*/
+	.card-form .row:first-child .form-field:first-child{
+		padding-right: 30px;
 	}
-	.form-field.col-md-6:nth-child(2){
-		padding-left: 10px; 
+	/*
+		Move the submit button to right
+	*/
+	.form-submit{
+		margin-top: 10px;
+		justify-content: flex-end;
 	}
-	.card-form .btn{
-		grid-column-start: 9;
-	}
+	/* -------- Footer --------- */
+	/*
+		Adjust the space
+	*/
 	#footer{
 		padding: 30px 20px 15px;
+	}
+}
+@media screen and (min-width: 992px) {
+	/*#trabajos .row {
+		justify-content: flex-start;
+	}*/
+	.contact-list{
+		width: auto;
+	}
+	.contact-row>:not(.card){
+		margin-top: 2em;
+	}
+	.card-form .row:first-child .form-field:first-child{
+		padding-right: 0;
 	}
 }
