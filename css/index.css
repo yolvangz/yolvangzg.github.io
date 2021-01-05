@@ -37,6 +37,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+	scroll-behavior: smooth;
+}
 body{
     font-size: 1em;
     font-family: var(--sans);
@@ -310,7 +313,7 @@ textarea.card-form-input{
 
 	font-size: 1.5em; /*24px*/
 	margin: 0;
-	font-family: var(--heebo);
+	font-family: var(--serif);
 }
 #header .menu-btn{
 	grid-area: menu-icon;
