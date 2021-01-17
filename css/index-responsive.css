@@ -17,7 +17,7 @@
 		More space
 	*/
 	#header{
-		padding: 0.625em 1em;
+		padding: 0.625em 1.2em;
 	}
 	#sobre-mi .feature{
 		margin-top: 1em;
@@ -68,9 +68,6 @@
 		align-self: flex-start;
 		margin-top: 70px;
 	}
-	/*.card-form .row:first-child{
-		justify-content: flex-start;
-	}*/
 	/*
 		Space between 2 fields
 	*/
@@ -91,11 +88,17 @@
 	#footer{
 		padding: 30px 20px 15px;
 	}
+	.footer-nav{
+		justify-content: center;
+	}
+	.footer-nav .nav-item{
+		padding: none;
+	}
+	.footer-nav .nav-item a{
+		padding: 1em 2em;
+	}
 }
 @media screen and (min-width: 992px) {
-	/*#trabajos .row {
-		justify-content: flex-start;
-	}*/
 	.contact-list{
 		width: auto;
 	}

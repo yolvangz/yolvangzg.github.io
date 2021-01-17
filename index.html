@@ -23,7 +23,8 @@
 	<style>
 		/* -- Google Fonts CDN -- */
 			/* 'Roboto Slab', serif */ /* 'Heebo', sans-serif */
-		@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&family=Roboto+Slab:wght@300;700&display=swap');
+		/*@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&family=Roboto+Slab:wght@300;700&display=swap');*/
+		@import url(css/fonts.css);
 		:root{
 			--sans: 'Heebo', sans-serif;
 			--serif: 'Roboto Slab', serif;
@@ -39,7 +40,18 @@
 		.bg-3{
 			background-image: url(images/sm/startup_meeting_640.jpg);
 		}
-		@media screen and (min-width: 992px) {
+		@media screen and (orientation: portrait){
+			.bg-1{
+				background-image: url(images/md/mac_code_screen_1280.jpg);
+			}
+			.bg-2{
+				background-image: url(images/md/writing_laptop_1280.jpg);
+			}
+			.bg-3{
+				background-image: url(images/md/startup_meeting_1280.jpg);
+			}
+		}
+		@media screen and (min-width: 992px){
 			.bg-1{
 				background-image: url(images/md/mac_code_screen_1280.jpg);
 			}
@@ -52,7 +64,8 @@
 		}
 	</style>
 	<!-- Font Awesome CDN -->
-	<script src="https://kit.fontawesome.com/454bbc9873.js" crossorigin="anonymous"></script>
+	<!-- <script src="https://kit.fontawesome.com/454bbc9873.js" crossorigin="anonymous"></script> -->
+	<link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
 </head>
 <body>
 	<!-- Start Main Header -->
@@ -84,7 +97,7 @@
 			<div class="callTo"><a href="#contacto" class="btn btn-pill btn-block btn-primary">Hablemos un rato</a></div>
 		</nav> -->
 		<div class="menu-btn">
-			<button class="menu-icon accordion-btn" data-target="navbar">
+			<button class="menu-icon accordion-btn" data-target="navbar" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle menu">
 				<i class="fas fa-bars fa-lg"></i>
 			</button>
 		</div>
@@ -105,13 +118,13 @@
 		</div>
 	<div class="main-wrapper">
 		<!-- Start Main Content -->
-		<section id="sobre-mi">
+		<section id="sobre-mi" aria-label="Acerca de mí">
 			<p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae nemo maxime dolor, nisi quo repellat, at rem culpa ipsam laboriosam, nihil tempore quia? Laudantium odio voluptatibus corrupti, vitae perspiciatis.</p>
 			<div class="row">
 				<article class="feature col-12 col-lg-4">
 					<figure>
 						<div class="feature-img blue">
-							<i class="fas fa-code fa-4x"></i>
+							<i class="fas fa-code fa-4x" role="img" aria-label="Habilidad"></i>
 						</div>
 						<figcaption>
 							<h4 class="feature-title">Título 1</h4>
@@ -129,7 +142,7 @@
 				<article class="feature col-12 col-lg-4">
 					<figure>
 						<div class="feature-img orange">
-							<i class="fas fa-code-branch fa-4x"></i>
+							<i class="fas fa-code-branch fa-4x" role="img" aria-label="Habilidad"></i>
 						</div>
 						<figcaption>
 							<h4 class="feature-title">Título 2</h4>
@@ -155,7 +168,7 @@
 					<figure class="feature">
 						<div class="feature-img">
 							<a href="https://w.tt/30jc2cO" target="wattpad">
-								<img src="images/md/blog/portada-libro-1.jpg" alt="Esclavo de la Luna">
+								<img src="images/blog/original/portada-libro-1.jpg" alt="Esclavo de la Luna - Historia en Wattpad">
 							</a>
 						</div>
 						<figcaption>
@@ -177,11 +190,11 @@
 					<figure class="card product-card">
 						<div class="card-img product-img">
 							<a href="#">
-								<img src="images/sm/shunken.jpg" alt="foto de Piedra, papel o tijeras">
+								<img src="images/projects/shunken.jpg" alt="foto de Piedra, papel o tijeras">
 							</a>
 						</div>
 						<figcaption class="card-content product-details">
-							<h6 class="product-status">Terminado</h6>
+							<h6 class="product-status" >Terminado</h6>
 							<h4 class="card-title product-title">¡Shunken!</h4>
 							<p class="card-text product-description">
 								Un sencillo juego de piedras, papel o tijeras contra una IA totalmente aleatoria, hecho puramente de HTML, CSS y JS, con apoyo del framework Bootstrap. ¿Quién sabe cuál ganará? ¡Sólo un resultado lo decidirá!
@@ -194,16 +207,16 @@
 					<figure class="card product-card">
 						<div class="card-img product-img">
 							<a href="#">
-								<img src="images/favicon.png" alt="Mi logotipo personal">
+								<img src="images/projects/briefcase.jpg" alt="Mi logotipo personal">
 							</a>
 						</div>
 						<figcaption class="card-content product-details">
 							<h6 class="product-status active">En Desarrollo</h6>
-							<h4 class="card-title product-title">My Portcase</h4>
+							<h4 class="card-title product-title">My Briefcase</h4>
 							<p class="card-text product-description">
 								Esta es mi página portafolio principal, hospedada con git-pages y mantenida por HTML y CSS, haciendo uso de las tecnologías de CSS Flex-box y CSS Grid.
 							</p>
-							<a href="#" class="product-link">Ver proyecto</a>
+							<a href="https://yolvangzg.github.io" target="project" class="product-link">Ver proyecto</a>
 						</figcaption>
 					</figure>
 				</article>
@@ -216,7 +229,7 @@
 				<article class="post col-12 col-lg-6">
 					<figure class="post-container">
 						<div class="post-img">
-							<img src="images/md/blog/post-1.jpg" alt="Imagen del post">
+							<img src="images/blog/md/post-md-1.jpg" alt="Imagen del post">
 						</div>
 						<figcaption class="post-details">
 							<h6 class="post-category orange">Personal</h6>
@@ -230,41 +243,37 @@
 				</article>
 			</div>
 		</section>
-		<section id="contacto" class="parallax bg-3">
+		<section id="contacto" class="parallax bg-3" aria-labelledby="contactTitle">
 			<div class="bg-filter">
 				<div class="parallax-wrapper">
 					<div class="row contact-row">
 						<div class="col-12 col-lg-4">
-							<h2 class="parallax-title">¿Quieres hablar?</h2>
+							<h2 class="parallax-title" id="contactTitle">¿Quieres hablar?</h2>
 							<p class="parallax-description">Si tienes algo que decirme, o sólo quieres hablar un rato, no dudes en contactarme.</p>
-							<dl class="contact-list">
+							<div class="contact-list">
 								<div class="contact-item-img">
 									<i class="fas fa-map-marker-alt fa-2x fa-fw"></i>
 								</div>
 								<div class="contact-item">
-									<dt class="contact-item-title">
-										<h4>Estoy en:</h4>
-									</dt>
-									<dd class="contact-item-description">
+									<h4 class="contact-item-title">Estoy en:</h4>
+									<p class="contact-item-description">
 										Punta Cardón, Punto Fijo, Edo. Falcón, Venezuela.
-									</dd>
+									</p>
 								</div>
 								<div class="contact-item-img">
 									<i class="fas fa-mobile-alt fa-2x fa-fw"></i>
 								</div>
 								<div class="contact-item">
-									<dt class="contact-item-title">
-										<h4>Llámame</h4>
-									</dt>
-									<dd class="contact-item-description">
+									<h4 class="contact-item-title">Llámame</h4>
+									<p class="contact-item-description">
 										+58 414-6992200 Lunes a Viernes, <time datetime="8:00:00">8:00</time>-<time datetime="22:00:00">22:00</time>
-									</dd>
+									</p>
 								</div>
-							</dl>
+							</div>
 						</div>
-						<article class="card col-12 col-lg-5" role="form">
+						<article class="card col-12 col-lg-5" aria-labelledby="formTitle">
 							<div class="card-header">
-								<h3 class="card-title">Envíame un mensaje</h3>
+								<h3 class="card-title" id="formTitle">Envíame un mensaje</h3>
 							</div>
 							<form class="card-form">
 								<div class="row">
@@ -306,9 +315,9 @@
 			de <a target="pixabay" href="https://pixabay.com">Pixabay</a>. Derechos reservados a sus respectivos propietarios</p>
 			<h5>Redes Sociales</h5>
 			<ul>
-				<li><i class="fab fa-lg fa-fw fa-facebook"></i><a href="https://www.facebook.com/Guillermo.Gomez64" target="red1">Guillermo Gómez</a></li>
-				<li><i class="fab fa-lg fa-fw fa-instagram"></i><a href="https://www.instagram.com/yolvangzg" target="red2">&#64;yolvangzg</a></li>
-				<li><i class="fab fa-lg fa-fw fa-github"></i><a href="https://github.com/yolvangzg" target="red3">&#64;yolvangzg</a></li>
+				<li><i class="fab fa-lg fa-fw fa-facebook" aria-label="Facebook: "></i><a href="https://www.facebook.com/Guillermo.Gomez64" target="red1">Guillermo Gómez</a></li>
+				<li><i class="fab fa-lg fa-fw fa-instagram" aria-label="Instagram: "></i><a href="https://www.instagram.com/yolvangzg" target="red2">&#64;yolvangzg</a></li>
+				<li><i class="fab fa-lg fa-fw fa-github" aria-label="GitHub: "></i><a href="https://github.com/yolvangzg" target="red3">&#64;yolvangzg</a></li>
 			</ul>
 			<nav>
 				<ul class="footer-nav">
@@ -323,9 +332,9 @@
 	<!-- End Footer -->
 	</div>
 	<!-- Scripts Libraries -->
-
 	<!-- Jquery CDN -->
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/smoothScroll.js" type="text/javascript"></script>
 	
 </body>
 </html>
