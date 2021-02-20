@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Yolvan G. Zambrano">
+	<meta name="description" content='Desarrollador Front-end, estudiante de la UNEFA, autor de la historia de Wattpad "Esclavo de la Luna"'>
+	<meta name="keywords" content="UNEFA, estudiante, desarrollador web, programador, Front-end, escritor, Esclavo de la Luna, Wattpad, blog, biografía">
+	<meta property="og:image" content="images/favicon.png">
+	<meta property="og:description" content='Desarrollador Front-end, estudiante de la UNEFA, autor de la historia de Wattpad "Esclavo de la Luna"'>
+	<meta property="og:title" content="Yolvan G. Zambrano">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<base href="./">
+
+	<title>Yolvan G. Zambrano</title>
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+	<!-- Hojas de Estilos y locales -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/index-responsive.css">
+
+	<style>
+		/* -- Google Fonts CDN -- */
+			/* 'Roboto Slab', serif */ /* 'Heebo', sans-serif */
+		/*@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&family=Roboto+Slab:wght@300;700&display=swap');*/
+		@import url(css/fonts.css);
+		:root{
+			--sans: 'Heebo', sans-serif;
+			--serif: 'Roboto Slab', serif;
+		}
+
+		/* -- Backgrounds Images -- */
+		.bg-1{
+			background-image: url(images/sm/mac_code_screen_640.jpg);
+		}
+		.bg-2{
+			background-image: url(images/sm/writing_laptop_640.jpg);
+		}
+		.bg-3{
+			background-image: url(images/sm/startup_meeting_640.jpg);
+		}
+		@media screen and (orientation: portrait){
+			.bg-1{
+				background-image: url(images/md/mac_code_screen_1280.jpg);
+			}
+			.bg-2{
+				background-image: url(images/md/writing_laptop_1280.jpg);
+			}
+			.bg-3{
+				background-image: url(images/md/startup_meeting_1280.jpg);
+			}
+		}
+		@media screen and (min-width: 992px){
+			.bg-1{
+				background-image: url(images/md/mac_code_screen_1280.jpg);
+			}
+			.bg-2{
+				background-image: url(images/md/writing_laptop_1280.jpg);
+			}
+			.bg-3{
+				background-image: url(images/md/startup_meeting_1280.jpg);
+			}
+		}
+	</style>
+	<!-- Font Awesome CDN -->
+	<!-- <script src="https://kit.fontawesome.com/454bbc9873.js" crossorigin="anonymous"></script> -->
+	<link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+</head>
+<body>
+	<!-- Start Main Header -->
+	<header id="header">
+		<!-- Start Navbar -->
+		<div class="navbar-title">
+			<p>Yolvan G. Zambrano</p>
+		</div>
+		<!-- <nav class="navbar">
+			<ul id="navbar" class="navbar-nav accordion">
+				<li class="nav-item">
+					<a class="accordion-btn" href="#sobre-mi" data-target="sub-menu-1"><i class="fas fa-user fa-fw"></i>Sobre mí</a>
+				</li>
+				<div class="accordion" id="sub-menu-1">
+					<li class="nav-item">
+						<a href="#"><i class="fas fa-chart-bar fa-fw"></i>Habilidades</a>
+					</li>
+					<li class="nav-item">
+						<a href="#"><i class="fas fa-book fa-fw"></i>Libro</a>
+					</li>
+				</div>
+				<li class="nav-item">
+					<a href="#proyectos"><i class="fas fa-tools fa-fw"></i>Proyectos</a>
+				</li>
+				<li class="nav-item">
+					<a href="#blog"><i class="fas fa-newspaper fa-fw"></i>Blog</a>
+				</li>
+			</ul>
+			<div class="callTo"><a href="#contacto" class="btn btn-pill btn-block btn-primary">Hablemos un rato</a></div>
+		</nav> -->
+		<div class="menu-btn">
+			<button class="menu-icon accordion-btn" data-target="navbar" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle menu">
+				<i class="fas fa-bars fa-lg"></i>
+			</button>
+		</div>
+		<!-- End Navbar -->
+	</header>
+	<!-- End Main Header -->
+	<!-- Start Main Content -->
+		<div class="hero parallax bg-1">
+			<div class="bg-filter">
+				<div class="parallax-wrapper">
+					<h1 class="parallax-title">Hola, me llamo Yolvan G. Zambrano</h1>
+					<p class="parallax-description">Programador Front-end, estudiante universitario y aspirante a escritor...</p>
+					<div class="callTo">
+						<a href="#sobre-mi" class="btn btn-primary">Saber más</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="main-wrapper">
+		<!-- Start Main Content -->
+		<section id="sobre-mi" aria-label="Acerca de mí">
+			<p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae nemo maxime dolor, nisi quo repellat, at rem culpa ipsam laboriosam, nihil tempore quia? Laudantium odio voluptatibus corrupti, vitae perspiciatis.</p>
+			<div class="row">
+				<article class="feature col-12 col-lg-4">
+					<figure>
+						<div class="feature-img blue">
+							<i class="fas fa-code fa-4x" role="img" aria-label="Habilidad"></i>
+						</div>
+						<figcaption>
+							<h4 class="feature-title">Título 1</h4>
+							<p class="feature-description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</figcaption>
+					</figure>
+				</article>
+				<article class="feature col-12 col-lg-4">
+					<figure>
+						<div class="feature-img orange">
+							<i class="fas fa-code-branch fa-4x" role="img" aria-label="Habilidad"></i>
+						</div>
+						<figcaption>
+							<h4 class="feature-title">Título 2</h4>
+							<p class="feature-description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</figcaption>
+					</figure>
+				</article>
+
+			</div>
+		</section>
+		<section id="libro" class="parallax bg-2">
+			<div class="bg-filter">
+				<div class="parallax-wrapper">
+					<h2 class="parallax-title">También escribo!!!</h2>
+					<p class="parallax-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo veniam nesciunt repudiandae vero in aliquam quod quis dignissimos quisquam, dolor, laboriosam. Nam sit exercitationem ratione dolorem libero nemo asperiores, incidunt!</p>
+					<figure class="feature">
+						<div class="feature-img">
+							<a href="https://w.tt/30jc2cO" target="wattpad">
+								<img src="images/blog/original/portada-libro-1.jpg" alt="Esclavo de la Luna - Historia en Wattpad">
+							</a>
+						</div>
+						<figcaption>
+							<h4 class="feature-title">Título: <cite>Esclavo de la Luna</cite></h4>
+							<p class="feature-description">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Quis, libero, magnam? Sint ea minima cum voluptates dolorum accusantium, iste ducimus neque laborum nihil consequuntur voluptatibus necessitatibus repellat facere libero perspiciatis.</p>
+							<div class="callTo">
+								<a href="https://www.wattpad.com/921267353-esclavo-de-la-luna-antes-que-nada" target="wattpad" class="btn btn-danger">Leer libro <i class="fas fa-lg fa-angle-right"></i></a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</section>
+		<section id="trabajos" class="bg-gray">
+			<h2 class="section-title">Mis Trabajos y Proyectos</h2>
+			<p class="section-description">Estos son algunos de los proyectos que he realizado y que estoy desarrollando hasta ahora:</p>
+			<div class="row">
+				<article class="product col-12 col-sm-6 col-lg-3">
+					<figure class="card product-card">
+						<div class="card-img product-img">
+							<a href="#">
+								<img src="images/projects/shunken.jpg" alt="foto de Piedra, papel o tijeras">
+							</a>
+						</div>
+						<figcaption class="card-content product-details">
+							<h6 class="product-status" >Terminado</h6>
+							<h4 class="card-title product-title">¡Shunken!</h4>
+							<p class="card-text product-description">
+								Un sencillo juego de piedras, papel o tijeras contra una IA totalmente aleatoria, hecho puramente de HTML, CSS y JS, con apoyo del framework Bootstrap. ¿Quién sabe cuál ganará? ¡Sólo un resultado lo decidirá!
+							</p>
+							<a href="#" class="product-link">Ver proyecto</a>
+						</figcaption>
+					</figure>
+				</article>
+				<article class="product col-12 col-sm-6 col-lg-3">
+					<figure class="card product-card">
+						<div class="card-img product-img">
+							<a href="#">
+								<img src="images/projects/briefcase.jpg" alt="Mi logotipo personal">
+							</a>
+						</div>
+						<figcaption class="card-content product-details">
+							<h6 class="product-status active">En Desarrollo</h6>
+							<h4 class="card-title product-title">My Briefcase</h4>
+							<p class="card-text product-description">
+								Esta es mi página portafolio principal, hospedada con git-pages y mantenida por HTML y CSS, haciendo uso de las tecnologías de CSS Flex-box y CSS Grid.
+							</p>
+							<a href="https://yolvangzg.github.io" target="project" class="product-link">Ver proyecto</a>
+						</figcaption>
+					</figure>
+				</article>
+			</div>
+		</section>
+		<section id="blog">
+			<h2 class="section-title">Blog</h2>
+			<p class="section-description">Mira mis últimas publicaciones</p>
+			<div class="row">
+				<article class="post col-12 col-lg-6">
+					<figure class="post-container">
+						<div class="post-img">
+							<img src="images/blog/md/post-md-1.jpg" alt="Imagen del post">
+						</div>
+						<figcaption class="post-details">
+							<h6 class="post-category orange">Personal</h6>
+							<h4 class="post-title">Algún título</h4>
+							<p class="post-description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatibus velit a deleniti quas doloribus quasi in corporis impedit accusantium! Deserunt quia ratione dicta delectus. Aspernatur asperiores ea assumenda iure!
+								<a href="#" class="post-link">Leer Más...</a>
+							</p>
+						</figcaption>
+					</figure>
+				</article>
+			</div>
+		</section>
+		<section id="contacto" class="parallax bg-3" aria-labelledby="contactTitle">
+			<div class="bg-filter">
+				<div class="parallax-wrapper">
+					<div class="row contact-row">
+						<div class="col-12 col-lg-4">
+							<h2 class="parallax-title" id="contactTitle">¿Quieres hablar?</h2>
+							<p class="parallax-description">Si tienes algo que decirme, o sólo quieres hablar un rato, no dudes en contactarme.</p>
+							<div class="contact-list">
+								<div class="contact-item-img">
+									<i class="fas fa-map-marker-alt fa-2x fa-fw"></i>
+								</div>
+								<div class="contact-item">
+									<h4 class="contact-item-title">Estoy en:</h4>
+									<p class="contact-item-description">
+										Punta Cardón, Punto Fijo, Edo. Falcón, Venezuela.
+									</p>
+								</div>
+								<div class="contact-item-img">
+									<i class="fas fa-mobile-alt fa-2x fa-fw"></i>
+								</div>
+								<div class="contact-item">
+									<h4 class="contact-item-title">Llámame</h4>
+									<p class="contact-item-description">
+										+58 414-6992200 Lunes a Viernes, <time datetime="8:00:00">8:00</time>-<time datetime="22:00:00">22:00</time>
+									</p>
+								</div>
+							</div>
+						</div>
+						<article class="card col-12 col-lg-5" aria-labelledby="formTitle">
+							<div class="card-header">
+								<h3 class="card-title" id="formTitle">Envíame un mensaje</h3>
+							</div>
+							<form class="card-form">
+								<div class="row">
+									<div class="form-field col-12 col-md-6 col-lg-12">
+										<input type="text" name="name" id="nombre" class="card-form-input" placeholder="Tu Nombre">
+										<label to="nombre" class="field-error">Este campo es obligatorio</label>
+									</div>
+
+									<div class="form-field col-12 col-md-6 col-lg-12">
+										<input type="email" name="email" id="correo" class="card-form-input" placeholder="Tu Correo Electrónico">
+										<label to="correo" class="field-error">Por favor, introduce un correo electrónico válido</label>
+									</div>
+								</div>
+								<div class="form-field">
+									<input type="text" name="subject" id="motivo" class="card-form-input" placeholder="Motivo">
+									<label to="motivo" class="field-error">Este campo es obligatorio</label>
+								</div>
+								<div class="form-field">
+									<textarea class="card-form-input" name="message" id="mensaje" placeholder="Tu Mensaje"></textarea>
+									<label to="mensaje" class="field-error">Este campo es obligatorio</label>
+								</div>
+								<div class="form-submit row">
+									<button class="col-12 col-md-4 col-lg-12 btn btn-primary btn-block" type="submit" role="submit">Enviar Mensaje</button>
+								</div>
+							</form>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Main Content -->
+		<!-- Start Footer -->
+		<footer id="footer">
+			<h5>Sobre la página</h5>
+			<p>Página elaborada por mí mismo. Un proyecto de <a href="https://yolvangzg.github.io" target="author">Yolvan G. Zambrano</a>.</p>
+			<p>Imágenes tomadas por <a target="pixabay-user" href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1839500">Pexels</a>,
+			<a target="pixabay-user" href="https://pixabay.com/users/startupstockphotos-690514/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=594090">StartupStockPhotos</a>, <a target="pixabay-user" href="https://pixabay.com/users/tumisu-148124/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4121142">Tumisu</a> y 
+			<a target="pixabay-user" href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=336378">Free-Photos</a>
+			de <a target="pixabay" href="https://pixabay.com">Pixabay</a>. Derechos reservados a sus respectivos propietarios</p>
+			<h5>Redes Sociales</h5>
+			<ul>
+				<li><i class="fab fa-lg fa-fw fa-facebook" aria-label="Facebook: "></i><a href="https://www.facebook.com/Guillermo.Gomez64" target="red1">Guillermo Gómez</a></li>
+				<li><i class="fab fa-lg fa-fw fa-instagram" aria-label="Instagram: "></i><a href="https://www.instagram.com/yolvangzg" target="red2">&#64;yolvangzg</a></li>
+				<li><i class="fab fa-lg fa-fw fa-github" aria-label="GitHub: "></i><a href="https://github.com/yolvangzg" target="red3">&#64;yolvangzg</a></li>
+			</ul>
+			<nav>
+				<ul class="footer-nav">
+					<li class="nav-item"><a href="#sobre-mi">Sobre mí</a></li>
+					<li class="nav-item"><a href="#trabajos">Trabajos</a></li>
+					<li class="nav-item"><a href="#blog">Blog</a></li>
+					<li class="nav-item"><a href="#contacto">Contacto</a></li>
+				</ul>
+			</nav>
+			<p>&copy; Github.com 2020.</p>
+		</footer>
+	<!-- End Footer -->
+	</div>
+	<!-- Scripts Libraries -->
+	<!-- Jquery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/smoothScroll.js" type="text/javascript"></script>
+	
+</body>
+</html>
