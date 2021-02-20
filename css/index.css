@@ -1,3 +1,5 @@
+@import url(grid.css);
+
 /* Variables */
 :root{
 	/* ------------------ Paleta de colores ------------------ */
@@ -36,14 +38,9 @@
     padding: 0;
 }
 body{
-    font-size: 16px;
+    font-size: 1em;
     font-family: var(--sans);
 	color: var(--color-dark);
-	/*Grid*/
-	display: grid;
-	grid-template-areas: 'header header header header header'
-						 'main main main main main'
-						 'footer footer footer footer footer'
 }
 h1, h2, h3, h4, h5{
 	font-family: var(--serif);
@@ -131,11 +128,11 @@ a{
 }
 
 /* ------ Formulario del card ------ */
+#contacto .row.contact-row{
+	justify-content: space-around;
+}
 .card-form{
 	padding: 30px 10px 48px;
-	display: grid;
-	grid-template-columns: auto;
-	grid-row-gap: 24px;  
 }
 .form-field{
 	display: flex;
@@ -181,8 +178,10 @@ textarea.card-form-input{
 }
 
 /* ------------------ Landing-Page Posts ------------------ */
-.post{
-	margin: 30px 0;
+.post .post-container{
+	margin: 30px auto;
+	padding: 0 15px;
+	max-width: 400px;
 }
 .post-img{
 	height: 183px;
@@ -250,6 +249,7 @@ textarea.card-form-input{
 }
 .btn-block{
 	display: block;
+	width: 100%;
 	padding: 15px;
 }
 .btn.btn-pill{
@@ -273,11 +273,10 @@ textarea.card-form-input{
 #header{
 	background-color: var(--color-white);
 	box-shadow: 0px -3px 10px var(--color-dark);
-	padding: 0 0.625em; /*16px 10px*/
+	padding: 0.5em 0.625em; /*16px 10px*/
 	position: sticky;
 	z-index: 10000;
 	top: 0; 
-	grid-area: header;
 	display: grid;
 	grid-template-areas: 'nav-title nav-title nav-title menu-icon'
 						 'navbar navbar navbar navbar';
@@ -309,9 +308,9 @@ textarea.card-form-input{
 	display: inline-flex;
 	align-items: center;
 
-	font-size: 1.625em; /*28px*/
+	font-size: 1.5em; /*24px*/
 	margin: 0;
-	font-family: var(--heebo);
+	font-family: var(--serif);
 }
 #header .menu-btn{
 	grid-area: menu-icon;
@@ -327,10 +326,6 @@ textarea.card-form-input{
 }
 
 /* ------------------ Estilos del Contenido Principal ------------------ */
-
-#main{
-	grid-area: main;
-}
 section:not(.parallax){
 	padding: 40px 25px 55px;
 	color: var(--color-lightGray);
@@ -418,28 +413,28 @@ section:not(.parallax) h4{
 	padding-top: 65px;
 	padding-bottom: 70px;
 }
+#trabajos .row{
+	justify-content: center;
+}
 .product{
-	padding-top: 30px;
+	padding: 30px 15px 0;
+	max-width: 270px;
 }
 .product-img{
-	
-	
 	background-color: var(--color-white);
 	box-shadow: 0 5px 15px -8px rgba(0,0,0,.24), 0 8px 10px -5px rgba(0,0,0,.2), 0 10px 10px -5px rgba(0,0,0,.2);
-	
 	overflow: hidden;
-	min-height: 60px;
 	transition: all .3s;
 	transform: translate(0,0);
-	/*position: relative;*/
 }
 .product-card:hover .product-img{
 	transform: translate(0,-10px);
 	box-shadow: 0 15px 35px -15px rgba(0,0,0,.5), 0 5px 25px 0 rgba(0,0,0,.12), 0 10px 10px -5px rgba(0,0,0,.2);
 }
 .product-img img{
-	max-width: 100%;
-	min-height: inherit;
+	width: 210px;
+	object-fit: cover;
+	object-position: center center;
 	margin-bottom: -7px;
 }
 .product-details{
@@ -473,6 +468,10 @@ section:not(.parallax) h4{
 	text-transform: traslate(0,-4px);
 	text-shadow: 0px 2px 3px;
 }
+/* ----------- Estilos de Blog ----------- */
+#blog>.row{
+	justify-content: center;
+}
 
 /* ----------- Estilos de Contacto ----------- */
 #contacto{
@@ -484,7 +483,7 @@ section:not(.parallax) h4{
 }
 .contact-list{
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: 50px auto;
 	grid-row-gap: 10px;
 	align-content: center;
 	margin-top: 30px;
@@ -506,7 +505,6 @@ section:not(.parallax) h4{
 /* ------------------ Estilos del Footer ------------------ */
 #footer{
 	font-size: 1em;
-	grid-area: footer;
 	background-color: var(--color-darkBlue);
 	color: var(--color-light);
 	padding: 30px 15px 10px;

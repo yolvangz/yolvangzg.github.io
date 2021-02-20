@@ -1,0 +1,28 @@
+/* --------------- Sans --------------- */
+@font-face{
+	font-family: 'Heebo';
+	src: url(../webfonts/Heebo-Light.woff);
+	font-weight: 300;
+}
+@font-face{
+	font-family: 'Heebo';
+	src: url(../webfonts/Heebo-Regular.woff);
+	font-weight: 400;
+}
+@font-face{
+	font-family: 'Heebo';
+	src: url(../webfonts/Heebo-Bold.woff);
+	font-weight: 700;
+}
+
+/* --------------- Sans-Serif --------------- */
+@font-face{
+	font-family: 'Roboto Slab';
+	src: url(../webfonts/RobotoSlab-Light.woff);
+	font-weight: 300;
+}
+@font-face{
+	font-family: 'Roboto Slab';
+	src: url(../webfonts/RobotoSlab-Bold.woff);
+	font-weight: 700;
+}
